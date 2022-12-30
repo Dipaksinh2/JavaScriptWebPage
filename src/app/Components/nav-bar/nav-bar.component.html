@@ -1,0 +1,12 @@
+<mat-toolbar style="background-color:rgb(70, 116, 117);">
+    <span>
+        <a mat-raised-button color="warn" routerLink="/">Home</a>
+    </span>
+    <span class="spacer"></span>
+    <span>
+        <a mat-raised-button color="warn" routerLink="/login">Login</a>
+    </span>
+    <span *ngIf="loggedIN()">
+        <a mat-raised-button color="warn" routerLink="/login">Dashboard</a>
+    </span>
+</mat-toolbar> 
